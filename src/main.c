@@ -273,7 +273,7 @@ int main(int argc, char **argv)
         log_err("Can't run in the background: %s\n", strerror(errno));
 
     if (verbose)
-        log_level(LOG_DEBUG);
+        set_log_level(LOG_DEBUG);
 
     log_info("rtty version %s\n", RTTY_VERSION_STRING);
 
